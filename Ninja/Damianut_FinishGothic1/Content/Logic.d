@@ -71,7 +71,7 @@ FUNC VOID INIT_ORCTEMPEL ()
     B_InitMonsterAttitudes ();
 	B_InitGuildAttitudes();
     
-    FF_ApplyOnceExtGT(Update_EVT_TPL_TRIGGER_SLEEPERHEARTS_05, 500, 1);
+    // FF_ApplyOnceExtGT(Update_EVT_TPL_TRIGGER_SLEEPERHEARTS_05, 500, 1);
 };
 
 
