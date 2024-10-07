@@ -59,24 +59,12 @@ func void Update_EVT_TPL_TRIGGER_SLEEPERHEARTS_05()
     mob.onStateFuncName = "DIA_EXTRO_AVI";
 };
 
-/*
- *  INIT_ORCTEMPEL
- */
-FUNC VOID INIT_ORCTEMPEL ()
+func void B_Story_EnteredTemple()
 {
-	//-------- Objekt-TAs --------
-	Wld_SetMobRoutine (00,00, "FIREPLACE", 1);
-
-	//-------- Attitüden initialisieren --------
-    B_InitMonsterAttitudes ();
-	B_InitGuildAttitudes();
-    
-    // FF_ApplyOnceExtGT(Update_EVT_TPL_TRIGGER_SLEEPERHEARTS_05, 500, 1);
+	Update_EVT_TPL_TRIGGER_SLEEPERHEARTS_05();
 };
 
-
-// EVT_TPL_TRIGGERSCRIPT_SLEEPERHEARTS_01
-func void DIA_EXTRO_AVI_S1 ()
-{
+FUNC VOID EVT_TPL_SLEEPERDEMON_05 ()
+{		
 	ExitGame();
 };
