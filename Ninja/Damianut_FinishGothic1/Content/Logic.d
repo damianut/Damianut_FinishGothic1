@@ -34,7 +34,7 @@ func void TriggerChangeLevel(var string levelName, var string startpoint)
 /*
  *  Change a zen
  */
-func int Diego_Gamestart_Condition()
+func int Info_Diego_Gamestart_Condition()
 {
     const int once = false;
     if (!once)
