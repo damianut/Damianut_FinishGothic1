@@ -49,7 +49,7 @@ func int Info_Diego_Gamestart_Condition()
     return false;
 };
 
-FUNC VOID EVT_TPL_SLEEPERDEMON_05 ()
+FUNC VOID EVT_TPL_SLEEPERDEMON_04 ()
 {		
 	ExitGame();
 };
