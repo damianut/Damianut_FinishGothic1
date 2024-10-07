@@ -49,21 +49,6 @@ func int Info_Diego_Gamestart_Condition()
     return false;
 };
 
-/*
- *  Update_EVT_TPL_TRIGGER_SLEEPERHEARTS_05
- */
-func void Update_EVT_TPL_TRIGGER_SLEEPERHEARTS_05()
-{
-    var int mobPtr; mobPtr = MEM_SearchVobByName("EVT_TPL_TRIGGER_SLEEPERHEARTS_05");
-    var oCMobInter mob; mob = _^(mobPtr);
-    mob.onStateFuncName = "DIA_EXTRO_AVI";
-};
-
-func void B_Story_EnteredTemple()
-{
-	Update_EVT_TPL_TRIGGER_SLEEPERHEARTS_05();
-};
-
 FUNC VOID EVT_TPL_SLEEPERDEMON_05 ()
 {		
 	ExitGame();
